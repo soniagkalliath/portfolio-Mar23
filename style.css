@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chivo+Mono:wght@300&family=Cormorant+Garamond:wght@500&family=Dancing+Script:wght@600&family=Itim&family=Mohave&family=Moon+Dance&family=Noto+Serif+Ahom&family=Oleo+Script+Swash+Caps:wght@700&family=Poppins:wght@200&family=Rubik+Gemstones&family=Sofia+Sans:ital@1&family=Solitreo&family=Solway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Solway', serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+nav{
+    display: flex;
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    width: 130px;
+}
+
+nav ul li{
+    display:inline-block ;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+/* pseudo class: selector:pseudo-class{property:value;} */
+nav ul li a:hover{
+    color: red;
+}
+
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.title h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.title #miller{
+    color: orange;
+    font-size: 50px;
+}
+
+.title p{
+    line-height: 20px;
+}
+
+.title a{
+    background: black;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+   margin-top: 30px;
+   font-weight: bold;
+}
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0;
+    right: 30px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    transition: bottom 1s,left 1s;
+}
+
+.images:hover .shape{
+    bottom: 70px;
+}
+.images:hover .girl{
+    left: 40%;
+}
+
+#about{
+    margin-left: 8%;
+    margin-top: 15%;
+    margin-right: 8%;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.about-content img{
+    width: 90%;
+}
+
+.about-text{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+.information{
+    margin:  1rem 0 1.4rem;
+}
+.information .info-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.information .info-box span{
+    margin-left: 10px;
+    font-weight: 400;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#skills{
+    margin-left: 8%;
+    margin-top: 8%;
+    margin-right: 8%;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    /* align-items: center; */
+    margin-top: 2rem;
+}
+.skill-img img{
+    width: 90%;
+    padding-left: 4rem;
+    object-position: center;
+}
+.bar-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+.bar-box h3,span{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.light-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-color: blueviolet;
+    border-radius: 0.5rem;
+}
+
+.html-bar{
+    background-color: rgb(175, 80, 209);
+    width: 94%;
+}
+
+.css-bar{
+    background-color: rgb(175, 80, 209);
+    width: 84%;
+}
+.js-bar{
+    background-color: rgb(175, 80, 209);
+    width: 90%;
+}
+.react-bar{
+    background-color: rgb(175, 80, 209);
+    width: 82%;
+}
+
+#contact{
+    margin: 8%;
+}
+
+.iconDiv{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.icon i{
+    font-size: 30px;
+}
+
+.icon:hover{
+    background-image: linear-gradient(rgb(255, 251, 0),orange);
+}
+
+.icon i:hover{
+    color: white;
+    animation: shake 0.25s;
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+footer{
+   margin: 2rem 0;
+}
+
+.up-arrow{
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px 30px 0;
+    background-image: linear-gradient(rgb(255, 251, 0),orange);
+}
+.up-arrow i{
+    color: white;
+}
+.up-arrow i:hover{
+    color: rgb(21, 20, 20);
+}
